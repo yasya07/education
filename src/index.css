@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bg-img {
+    /*background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/02/10/Education-Logo-Graphics-1-11-580x386.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 50%;*/
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50% -50%);*/
+    height: 500px;
+}
+
+.rcs_buttonSet, .rcs_dotsSet {
+    display: none !important;
+}
+
+.networkIcon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.networkIcon :first-child {
+    margin-right: 10px;
+    font-size: 22px;
+    transition: 1s;
+}
+
+.networkIcon :first-child:hover {
+    transform: scale(1.1);
+}
+
+span > a {
+    color: black;
+}
+
+.nav-button::before, .nav-button::after {
+    content: " ";
+    display: block;
+    width: 5px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: calc(50% - 2.5px) ;
+    transition: .5s;
+    opacity: 0;
+}
+
+.nav-button:hover::after,.nav-button:hover::before {
+    transform: scaleX(10);
+    opacity: 1;
+}
+.nav-button:hover{
+    background-color: transparent!important;
+}
+
+.boo{
+    padding: .5rem;
+    border: 1px solid forestgreen;
+    color: forestgreen;
+    cursor: pointer;
+}
+.boo1{
+    padding: .5rem;
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
